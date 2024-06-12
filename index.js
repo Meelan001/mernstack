@@ -12,3 +12,5 @@ age=26;
 console.log("my name is "+ name +"." + " i live in " +address +".");
 console.log(`i am ${age} years old.`)
 console.log("a"-"a")
+
+console.log("hello hello")
