@@ -153,11 +153,11 @@ console.log(data); */
 //     console.log(element*element)
 // })
 
-//Array.from
+Array.from
 
-// let name="milan";
-// let arr = Array.from(name);
-// console.log(arr)
+let name="milan";
+let arr = Array.from(name);
+console.log(arr)
 
 //for of loop
 // let num=[1,2,3,4,5]
@@ -191,3 +191,52 @@ console.log(data); */
 //     return a+b;
 // })
 // console.log(n)
+
+// let Employees={
+//     name :"milan",
+//     address :"minbhawan",
+//     contact: "9849788814",
+//     role : 'frontend developer'
+
+// }
+
+// console.log(Employees.name)
+// console.log(Employees.address)
+
+//while loop
+// let i=1;
+// while(i<2){
+//     console.log(i);
+//     i++;
+// }
+
+//do while loop
+ 
+// let list=['a','b','c']
+//  let newList=list.map((value,index)=>{
+//   return `${value}${index}`;
+ 
+   
+// });
+
+// console.log(newList)
+
+//use map method if both input and output arrays are the same and both input and output's length are same.
+//[1,2,3,4] =[2,4,6,8]
+
+// let list=[1,2,3,4,5]
+// let newList=list.map((value,index)=>{
+//     return value*3;
+// });
+// console.log(newList);
+
+
+  let func1=((arrays)=>{
+    let output=arrays.map((value,index)=>{
+        return value*2;
+    })
+    return output;
+})
+
+let func=func1([1,2,3,4,]);
+console.log(func)
