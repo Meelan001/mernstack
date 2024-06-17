@@ -135,12 +135,59 @@ console.log(data); */
 
 //export and import
 
-console.log(new Date());
-console.log(new Date().toDateString());
-console.log(new Date().toLocaleDateString());
-console.log(new Date().toLocaleTimeString());
+// console.log(new Date());
+// console.log(new Date().toDateString());
+// console.log(new Date().toLocaleDateString());
+// console.log(new Date().toLocaleTimeString());
 
-let name="milan khadka";
-console.log(name.length)
-console.log(name.toUpperCase());
-console.log(name.replaceAll("milan","avi"))
+// let name="milan khadka";
+// console.log(name.length)
+// console.log(name.toUpperCase());
+// console.log(name.replaceAll("milan","avi"))
+
+// let num=[1,2,3,4,5,6]
+// for (let i=0;i<num.length;i++){
+//     console.log(num[i])
+// }
+// num.forEach((element)=>{
+//     console.log(element*element)
+// })
+
+//Array.from
+
+// let name="milan";
+// let arr = Array.from(name);
+// console.log(arr)
+
+//for of loop
+// let num=[1,2,3,4,5]
+// for  ( let item of num){
+//     console.log(item)
+// }
+
+//for in loop
+// let num=[1,2,3,4,5]
+// for(let i in num){
+//    // console.log(i) //for key of array
+//     console.log(num[i])
+// }
+
+//map()
+//  let arr=[25,30,40,50];
+//  arr.map((value,index, array)=>{
+//     console.log(value, index ,array)
+//  })
+
+ // array filter method
+// let num=[1,2,3,4,520,30,40,50,6]
+// let n=num.filter((a)=>{
+//     return a<10;
+// })
+// console.log(n)
+
+//array reduce method
+// let num=[1,2,3,4,5,6,7,8,9]
+// let n=num.reduce((a,b)=>{
+//     return a+b;
+// })
+// console.log(n)
