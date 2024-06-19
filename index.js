@@ -285,21 +285,64 @@ console.log(data); */
 // console.log(stdDetails)
 
 //duplicate key doesnot exist ,if exist override by below code
-let data={
-    name: "milan kahdka",
-    favFruits: ["apple","orange"],
-    location :{
-        country :"Nepal",
-        provience: "bagmati",
-        city: "kathmandu"
-    },
-    age:function(){
-        console.log("my name is milan khadka,i am 20 years old")
-    }
+// let data={
+//     name: "milan kahdka",
+//     favFruits: ["apple","orange"],
+//     location :{
+//         country :"Nepal",
+//         provience: "bagmati",
+//         city: "kathmandu"
+//     },
+//     age:function(){
+//         console.log("my name is milan khadka,i am 20 years old")
+//     }
 
-}
+// }
 
-console.log(data.name)
-console.log(data.favFruits[1]);
-console.log(data.location.city)
-data.age();
+// console.log(data.name)
+// console.log(data.favFruits[1]);
+// console.log(data.location.city)
+// data.age();
+
+//alias
+//alias means changing variables names.
+
+// let{
+//     name :fullName,
+//     age : year,
+//     ismarried,
+// }={
+//     name:"milan khadka",
+//     age :28,
+//     ismarried :false
+// }
+// console.log(fullName)
+
+//this keyword
+// let info ={
+//     name:"milan",
+//     surName:"khadka",
+//     fullName:function(){
+//         console.log(this.name);
+//         console.log(this.surName)
+//     }
+// }
+
+// info.fullName();
+
+//array destructure
+// let names=["milan","supendra","rajdeep"]; 
+// let [a,b,c,d="rosedeep"]=names; //default value d="rojdip"
+// console.log(a,b,c,d)
+
+//spread operator
+//syntax ...
+// let planet=["sun","moon","pluto"];
+// let[planet1,...rest]=planet;
+// console.log(planet1)
+// console.log(rest)
+
+let name=["milan","supen","bibek","ravi"];
+let data=["school","kathmnadu","nepal"];
+let totalData=[...name,"this is my data",...data,...name];
+console.log(totalData);
