@@ -153,11 +153,11 @@ console.log(data); */
 //     console.log(element*element)
 // })
 
-Array.from
+// Array.from
 
-let name="milan";
-let arr = Array.from(name);
-console.log(arr)
+// let name="milan";
+// let arr = Array.from(name);
+// console.log(arr)
 
 //for of loop
 // let num=[1,2,3,4,5]
@@ -231,12 +231,75 @@ console.log(arr)
 // console.log(newList);
 
 
-  let func1=((arrays)=>{
-    let output=arrays.map((value,index)=>{
-        return value*2;
-    })
-    return output;
-})
+//   let func1=((arrays)=>{
+//     let output=arrays.map((value,index)=>{
+//         return value*2;
+//     })
+//     return output;
+// })
 
-let func=func1([1,2,3,4,]);
-console.log(func)
+// let func=func1([1,2,3,4,]);
+// console.log(func)
+
+
+//reduce
+//find the mjltyplication of all array values
+
+// let list=[1,2,3,4,5];
+// let newList=list.reduce((previous, current)=>{
+//     return previous * current;
+// },1);
+// console.log(newList)
+
+// let list=[1,2,3,5,8,10]
+// let newList=list.filter((a)=>{
+//     return a%2===0;
+// })
+// console.log(newList)
+// let redNum=newList.reduce((a,b)=>{
+//     return a+b
+// },0)
+// console.log(redNum)
+
+//objects 
+
+
+// let stdDetails={
+//     stdId : 1,
+//     stdName : "Milan khadka",
+//     address : "minbhawan",
+//     age : 26,
+//     isMarried :false
+
+// }
+
+// console.log(stdDetails.isMarried)
+
+// //cahneg the object value
+// stdDetails.name="supendrea dangol";
+// stdDetails.age=29;
+// console.log(stdDetails.name)
+
+// //delet object value
+// delete stdDetails.isMarried;
+// console.log(stdDetails)
+
+//duplicate key doesnot exist ,if exist override by below code
+let data={
+    name: "milan kahdka",
+    favFruits: ["apple","orange"],
+    location :{
+        country :"Nepal",
+        provience: "bagmati",
+        city: "kathmandu"
+    },
+    age:function(){
+        console.log("my name is milan khadka,i am 20 years old")
+    }
+
+}
+
+console.log(data.name)
+console.log(data.favFruits[1]);
+console.log(data.location.city)
+data.age();
