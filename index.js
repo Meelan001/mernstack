@@ -342,7 +342,8 @@ console.log(data); */
 // console.log(planet1)
 // console.log(rest)
 
-let name=["milan","supen","bibek","ravi"];
-let data=["school","kathmnadu","nepal"];
-let totalData=[...name,"this is my data",...data,...name];
-console.log(totalData);
+// let name=["milan","supen","bibek","ravi"];
+// let data=["school","kathmnadu","nepal"];
+// let totalData=[...name,"this is my data",...data,...name];
+// console.log(totalData);
+
