@@ -269,11 +269,11 @@ const products = [
   ];
 
   let filArray=products.filter((a)=>{
-    return a.price>2000
+    return a.price>2000;
   })
-  console.log(filArray)
+  console.log(filArray);
 
   let arrDisplay=filArray.map((value,index)=>{
-    return `${value.title} cost NRs ${value.price} and its category is ${value.category} `
+    return `${value.title} cost NRs ${value.price} and its category is ${value.category} `;
   })
-  console.log(arrDisplay)
+  console.log(arrDisplay);
