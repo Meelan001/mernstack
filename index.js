@@ -449,3 +449,9 @@ console.log(data); */
 //   let output= new Error("here is error");
 //   console.log(output);
 // }
+
+//git stash
+
+//git brach
+//git checkout -b brachname (create brach)
+//git checkout brachname(switch brach)
