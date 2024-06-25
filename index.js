@@ -4,7 +4,7 @@ console.log(1+1); */
 // java script is a asynchronus and signle threated language.
 // if two numbers are added it produces a output of sum and if two string are added it concatenate and produces output as a string.
 
-// variable 
+// variable
 /* let name="meelan";
 let address= "minbhawan";
 let age =27;
@@ -17,7 +17,7 @@ console.log("hello hello") */
 
 // let a='mee"lan'
 // console.log(a)
-// we cannot  use double quotes inside double quotes and we also cannot use single quotes 
+// we cannot  use double quotes inside double quotes and we also cannot use single quotes
 //inside single quotes. but qw can use single quotes into the double quotes and double quotes
 //single quotes
 // console.log("1"+2+3+4)
@@ -59,7 +59,6 @@ if(a){
 
 // let firstName= "milan";
 
-
 /* if(firstName==="mila" && firstName==="milan"){
     console.log("i am milan")
 }else{
@@ -83,14 +82,12 @@ for(i=0;i<=5;i++){
 //     console.log("first")
 // }
 
-
 // let sum=function(a,b){
-    
+
 //     return  a+b;
 // }
 // let data=sum(1,2);
 // console.log(data)
-
 
 // console.log("a")
 // myFunc();
@@ -100,7 +97,6 @@ for(i=0;i<=5;i++){
 // }
 // myFunc(10);
 // myFunc("hello world");
-
 
 // let myFunc=()=>{
 //     console.log("hello world")
@@ -178,7 +174,7 @@ console.log(data); */
 //     console.log(value, index ,array)
 //  })
 
- // array filter method
+// array filter method
 // let num=[1,2,3,4,520,30,40,50,6]
 // let n=num.filter((a)=>{
 //     return a<10;
@@ -211,12 +207,11 @@ console.log(data); */
 // }
 
 //do while loop
- 
+
 // let list=['a','b','c']
 //  let newList=list.map((value,index)=>{
 //   return `${value}${index}`;
- 
-   
+
 // });
 
 // console.log(newList)
@@ -230,7 +225,6 @@ console.log(data); */
 // });
 // console.log(newList);
 
-
 //   let func1=((arrays)=>{
 //     let output=arrays.map((value,index)=>{
 //         return value*2;
@@ -240,7 +234,6 @@ console.log(data); */
 
 // let func=func1([1,2,3,4,]);
 // console.log(func)
-
 
 //reduce
 //find the mjltyplication of all array values
@@ -261,8 +254,7 @@ console.log(data); */
 // },0)
 // console.log(redNum)
 
-//objects 
-
+//objects
 
 // let stdDetails={
 //     stdId : 1,
@@ -331,7 +323,7 @@ console.log(data); */
 // info.fullName();
 
 //array destructure
-// let names=["milan","supendra","rajdeep"]; 
+// let names=["milan","supendra","rajdeep"];
 // let [a,b,c,d="rosedeep"]=names; //default value d="rojdip"
 // console.log(a,b,c,d)
 
@@ -347,3 +339,113 @@ console.log(data); */
 // let totalData=[...name,"this is my data",...data,...name];
 // console.log(totalData);
 
+//primitive and non primitive datatypes
+//in javascript a primitive datatype is a data that is not an object and has no methods and properties.
+//primitive=> string,number,null,boolean,undefined
+//non-primitive => function, array and object
+
+// //set
+// let arr = [1, 1, 2, 3, 1, 3, 4, 1];
+// let arr2 = [...new Set(arr)];
+// console.log(arr2);
+
+//ternary operator
+// let age = 7;
+// let output = age > 18 ? "you can drive" : "you can not drrive";
+// console.log(output);
+//logical operator
+//logical and
+
+// let name = false;
+// let isAdmin = false;
+
+// if (name || isAdmin) {
+//   console.log("welcom");
+// } else {
+//   console.log("denied");
+// }
+
+// let a = 2;
+// let b = 10;
+// let c = 8;
+
+// if (a >= b && a >= c) {
+//   console.log("a is greater");
+// } else if (b >= a && b >= c) {
+//   console.log("b is greater");
+// } else {
+//   console.log("c is grater");
+// }
+
+//scope chaining
+// if(true){ //parent block
+//   a=5;
+//   if(true){//child block
+//     a=6
+//     if(true){//grand child block 
+//       a=2; //looks for a own block if not get a value then loock for a parent block so on
+//       console.log(a)
+//     }
+//   }
+// }
+// parent block can access child block bur child block cant access parent block
+
+//lexical scope
+//lexical scope is a scope of a parent.[only parent]
+// if(true){ //parent block
+//   a=5;
+//   if(true){//child block
+//     a=6
+//     if(true){//grand child block 
+//       a=2; //looks for a own block if not get a value then loock for a parent block so on
+//       console.log(a)
+//     }
+//   }
+// }
+
+//set timeout
+// setTimeout(fun,delaytime)
+// setTimeout(()=>{
+//   console.log("this is settimeout")
+// },3000);
+// console.log("b")
+//set timeout function will executes at last.
+
+//callback function
+//a call back function is a function passed into another function
+// let fun1=()=>{};
+// let fun2=()=>{};
+// let fun3=()=>{};
+// fun2(fun1,fun3)
+//fun2 is a higher order function
+//higher order function which takes argument as function.
+// a function ehch return another function is called higher order function.
+
+//jason.stringify = convert a javascript value to a javascript object notation (JSON) string.
+// let info={
+//   name:"milan",
+//   age: 28,
+//   location: "minbhawan"
+// }
+
+// let info2=JSON.stringify(info);
+// console.log(info2)
+
+// //json.parse()=>convert a javascript object notation string into  a object
+
+// let jInfo='{"name":"milan","age":28,"location":"minbhawan"}';
+// let infoJ=JSON.parse(jInfo)
+// console.log(infoJ)
+
+//Error handling
+// let age=20;
+// try{
+//   if(ages>20){
+//     console.log("you can drive")
+//   }else{
+//     console.log("you cannot drive")
+//   }
+// }catch(error){
+//   let output= new Error("here is error");
+//   console.log(output);
+// }

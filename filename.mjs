@@ -1,3 +1,3 @@
-export let sum=()=>{
-    return 2+4;
-}
+export let sum = () => {
+  return 2 + 4;
+};
